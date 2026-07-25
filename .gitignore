@@ -1,0 +1,28 @@
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor and IDE configurations
+.vscode/
+.idea/
+.gemini/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Logs and databases
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Project specific folders
+Reference Resources/
+

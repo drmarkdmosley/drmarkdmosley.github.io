@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Dr. Mark D. Mosley - DoD-DoT-FAA-FDA Data Science PhD, PMP/ME, Quantitative Executive Leader, STEM Professor, and Global OpEx Consultant with 20+ years of experience." />
+  <meta name="keywords"
+    content="Dr. Mark Mosley, Data Science, Operational Excellence, STEM Professor, Consultant, PMP, Six Sigma, MDM Enterprises, LinkedIn" />
+  <meta name="author" content="Dr. Mark D. Mosley" />
+  <meta property="og:title" content="Dr. Mark D. Mosley | Data Science PhD and Executive Leader" />
+  <meta property="og:description"
+    content="Global Operational Excellence Leader, STEM Professor, and Data Science PhD with 20+ years across DoD, DoT, FAA, FDA, and USDA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/dr-mosley.jpg" />
+  <title>Dr. Mark D. Mosley | Data Science PhD &amp; Executive Leader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=8" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="nav-logo-text">Dr. Mark D. Mosley</span>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#hero" class="nav-link active" id="navHome">Home</a></li>
+        <li><a href="#about" class="nav-link" id="navAbout">About</a></li>
+        <li><a href="#experience" class="nav-link" id="navExp">Experience</a></li>
+        <li><a href="#skills-teaching" class="nav-link" id="navSkillsTeaching">Life Science and Career Portfolio</a>
+        </li>
+        <li><a href="#education" class="nav-link" id="navEdu">Education</a></li>
+        <li><a href="#certifications" class="nav-link" id="navCerts">Certifications</a></li>
+        <li><a href="#services" class="nav-link" id="navServices">Services</a></li>
+        <li><a
+            href="https://www.linkedin.com/in/dr-mark-d-mosley-dm-ist-mba-tm-pmp-me%C2%AE-itil%C2%AE-ssgb%C2%AE-csp%C2%AE-asq%C2%AE-45685314/"
+            target="_blank" rel="noopener noreferrer" class="nav-link nav-linkedin" id="navLinkedIn"
+            aria-label="LinkedIn Profile">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
+          </a></li>
+        <li><a href="https://www.humiint.com/ii/68d9d6d8-0029-4c69-ad0d-0ea90e525d64" target="_blank"
+            rel="noopener noreferrer" class="nav-link nav-linkedin" id="navHumiint" aria-label="Humiint Profile">
+            <img src="assets/humiint_logo.jpg" alt=""
+              style="width: 14px; height: 14px; object-fit: contain; vertical-align: text-bottom; border-radius: 2px;"
+              aria-hidden="true" />
+            Humiint
+          </a></li>
+        <li><a href="#contact" class="nav-link nav-cta" id="navContact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero hero-v2" aria-label="Hero section">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    </div>
+
+    <div class="hero-v2-inner">
+
+      <!-- Agency pill -->
+      <div class="hero-tag su-reveal" data-delay="0">
+        <span>DoD &bull; DoT &bull; FAA &bull; FDA &bull; USDA &bull; Data Science PhD</span>
+      </div>
+
+      <!-- BIG horizontal name — single line -->
+      <h1 class="hero-v2-name su-reveal" data-delay="150">
+        <span class="hero-v2-first">Dr. Mark&nbsp;D. </span><span class="hero-v2-last">Mosley</span>
+      </h1>
+
+      <!-- Role / tagline strip -->
+      <p class="hero-v2-role su-reveal" data-delay="300">
+        Founder &amp; CEO/COO &nbsp;·&nbsp; Quantitative Executive Leader &nbsp;·&nbsp; PMP/ME &nbsp;·&nbsp; SAFe
+        &nbsp;·&nbsp; PRINCE2
+      </p>
+
+      <!-- Highlight badges row -->
+      <div class="hero-v2-badges su-reveal" data-delay="400">
+        <span class="hero-badge"><span class="badge-icon">🔐</span> TS/SCI Cleared</span>
+        <span class="hero-badge"><span class="badge-icon">🏛️</span> Federal Agency Expert</span>
+        <span class="hero-badge"><span class="badge-icon">🌐</span> 22 Global Sites Led</span>
+        <span class="hero-badge"><span class="badge-icon">🎓</span> 4 Degrees</span>
+      </div>
+
+      <!-- Marquee -->
+      <div class="hero-marquee-container su-reveal" data-delay="450">
+        <div class="hero-marquee">
+          <span class="marquee-tag">Construction</span>
+          <span class="marquee-tag">Consumer Services</span>
+          <span class="marquee-tag">Manufacturing</span>
+          <span class="marquee-tag">Government Administration</span>
+          <span class="marquee-tag">Transportation &amp; Logistics</span>
+          <span class="marquee-tag">Technology &amp; Media</span>
+          <span class="marquee-tag">Professional Services</span>
+          <span class="marquee-tag">Oil, Gas &amp; Mining</span>
+          <span class="marquee-tag">Utilities</span>
+          <span class="marquee-tag">Healthcare</span>
+          <span class="marquee-tag">Admin &amp; Support Services</span>
+          <span class="marquee-tag">Education</span>
+          <span class="marquee-tag">Pharma &amp; Biotech</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="marquee-tag">Construction</span>
+          <span class="marquee-tag">Consumer Services</span>
+          <span class="marquee-tag">Manufacturing</span>
+          <span class="marquee-tag">Government Administration</span>
+          <span class="marquee-tag">Transportation &amp; Logistics</span>
+          <span class="marquee-tag">Technology &amp; Media</span>
+          <span class="marquee-tag">Professional Services</span>
+          <span class="marquee-tag">Oil, Gas &amp; Mining</span>
+          <span class="marquee-tag">Utilities</span>
+          <span class="marquee-tag">Healthcare</span>
+          <span class="marquee-tag">Admin &amp; Support Services</span>
+          <span class="marquee-tag">Education</span>
+          <span class="marquee-tag">Pharma &amp; Biotech</span>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats su-reveal" data-delay="500">
+        <div class="hero-stat">
+          <div class="stat-num-wrap">
+            <span class="stat-num counter" data-target="20" data-suffix="+">0</span>
+          </div>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="stat-num-wrap">
+            <span class="stat-num counter" data-target="10" data-suffix="+">0</span>
+          </div>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="stat-num-wrap">
+            <span class="stat-num counter" data-target="22" data-suffix="">0</span>
+          </div>
+          <span class="stat-label">Global Sites Led</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="stat-num-wrap">
+            <span class="stat-num counter" data-target="4" data-suffix="">0</span>
+          </div>
+          <span class="stat-label">Degrees Earned</span>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="hero-actions su-reveal" data-delay="600">
+        <a href="#services" class="btn btn-primary" id="heroConsultBtn">Book a Consultation</a>
+        <a href="https://www.linkedin.com/in/dr-mark-d-mosley-dm-ist-mba-tm-pmp-me%C2%AE-itil%C2%AE-ssgb%C2%AE-csp%C2%AE-asq%C2%AE-45685314/"
+          target="_blank" rel="noopener noreferrer" class="btn btn-linkedin" id="heroLinkedInBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn Profile
+        </a>
+        <a href="https://www.humiint.com/ii/68d9d6d8-0029-4c69-ad0d-0ea90e525d64" target="_blank"
+          rel="noopener noreferrer" class="btn btn-linkedin" id="heroHumiintBtn">
+          <img src="assets/humiint_logo.jpg" alt=""
+            style="width: 16px; height: 16px; object-fit: contain; border-radius: 4px;" aria-hidden="true" />
+          Humiint Profile
+        </a>
+        <a href="#about" class="btn btn-outline" id="heroAboutBtn">Learn More</a>
+      </div>
+
+    </div><!-- /hero-v2-inner -->
+
+    <!-- Scroll indicator — fixed to bottom, outside all content -->
+    <a href="#about" class="hero-scroll-indicator" id="heroScrollBtn" aria-label="Scroll to About">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag su-reveal">About Me</span>
+        <h2 id="about-heading" class="section-title su-reveal" data-delay="100">
+          <span style="color: #ffffff;">Global</span><br />
+          <span style="color: #ffffff;">C-Suite | Senior Vice President Executive</span><br />
+          <span class="gradient-text">Operational Excellence (OpEX)</span>
+        </h2>
+      </div>
+      <div class="about-grid about-grid-photo">
+        <!-- Photo column -->
+        <div class="about-photo-col su-reveal" data-delay="0">
+          <div class="about-photo-wrap">
+            <div class="hero-photo-ring"></div>
+            <div class="hero-photo-ring hero-photo-ring-2"></div>
+            <div class="hero-photo" id="heroPhoto">
+              <img src="assets/dr-mosley-full.jpg" alt="Dr. Mark D. Mosley — Global OpEx Leader" id="heroImg" />
+              <div class="photo-fallback" id="photoFallback">MM</div>
+            </div>
+            <div class="hero-status-badge">
+              <span class="status-dot"></span>
+              <span>Available for Consulting</span>
+            </div>
+          </div>
+        </div>
+        <!-- Content column -->
+        <div class="about-content su-reveal" data-delay="100">
+
+          <!-- Lead sentence: one punchy line -->
+          <p class="about-lead-line">
+            C-Suite executive with <strong>20+ years</strong> driving Operational Excellence across federal agencies,
+            global manufacturing, biotech, and defense — from the DoD to the FDA.
+          </p>
+
+          <!-- Achievement cards grid -->
+          <div class="about-achievements">
+
+            <div class="achieve-card">
+              <span class="achieve-icon">🏛️</span>
+              <div>
+                <strong>Federal Agency Leadership</strong>
+                <p>Guided OpEx best practices across DoD, DoT, FAA, FDA &amp; USDA regulated contractual programs.</p>
+              </div>
+            </div>
+
+            <div class="achieve-card">
+              <span class="achieve-icon">🏭</span>
+              <div>
+                <strong>Global Manufacturing (22 Sites)</strong>
+                <p>Led Kloeckner Pentaplast's QSHE Lean operations across EPC and FDA-USDA plastics manufacturing via
+                  behavior-based methodologies.</p>
+              </div>
+            </div>
+
+            <div class="achieve-card">
+              <span class="achieve-icon">💉</span>
+              <div>
+                <strong>Pharma &amp; Biotech Value Streams</strong>
+                <p>Directed R&amp;D approvals for Pharma, Biologics, Med-Dev &amp; Vaccine therapies working with CDMOs,
+                  CMOs &amp; CROs.</p>
+              </div>
+            </div>
+
+            <div class="achieve-card">
+              <span class="achieve-icon">🎖️</span>
+              <div>
+                <strong>U.S. Army ISO9001 Accreditation</strong>
+                <p>Obtained DCMA-approved ISO9001:2008® QMS accreditation across G6 Army Accessions Command® &amp;
+                  Communications Electronics Division®.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Industries -->
+          <div class="about-industries">
+            <h3 class="about-industries-title">Industries Served</h3>
+            <div class="about-ind-tags">
+              <span class="ind-tag">Construction</span>
+              <span class="ind-tag">Consumer Services</span>
+              <span class="ind-tag">Manufacturing</span>
+              <span class="ind-tag">Government &amp; Defense</span>
+              <span class="ind-tag">Transportation &amp; Logistics</span>
+              <span class="ind-tag">Technology &amp; Media</span>
+              <span class="ind-tag">Professional Services</span>
+              <span class="ind-tag">Oil, Gas &amp; Mining</span>
+              <span class="ind-tag">Utilities</span>
+              <span class="ind-tag">Healthcare</span>
+              <span class="ind-tag">Education</span>
+              <span class="ind-tag">Pharma &amp; Biotech</span>
+            </div>
+          </div>
+
+          <!-- Clearance + LinkedIn -->
+          <div class="about-clearance">
+            <div class="clearance-badge">
+              <span class="clearance-icon">&#128274;</span>
+              <div>
+                <span class="clearance-label">Security Clearance</span>
+                <span class="clearance-value">Public Trust | TS/SCI (CLEARED)</span>
+              </div>
+            </div>
+            <div class="clearance-badge">
+              <span class="clearance-icon">&#128205;</span>
+              <div>
+                <span class="clearance-label">Location</span>
+                <span class="clearance-value">United States</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience-section" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag su-reveal">Career</span>
+        <h2 id="experience-heading" class="section-title su-reveal" data-delay="100">Life Science Innovation
+          and<br /><span class="gradient-text">Career Experience</span></h2>
+      </div>
+
+      <div class="experience-split-view" id="experienceSplitView">
+
+        <!-- Left: Master List (Tabs) -->
+        <div class="exp-master su-reveal" data-delay="0">
+          <button class="exp-tab active" data-target="exp-glg">
+            <div class="exp-tab-date">Apr 2022 – Present</div>
+            <span class="exp-tab-logo glg"><img src="assets/Experience_Logos/glg_logo.jpg" alt="GLG" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">GLG® (Gerson Lehrman Group)</span>
+              <span class="exp-tab-role">Expert Witness Services (OpEx) OSHA® | EPA® | QA &amp; Control</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+          <button class="exp-tab " data-target="exp-mdm">
+            <div class="exp-tab-date">Dec 2017 – Present</div>
+            <span class="exp-tab-logo mdm">MDM</span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">MDM Enterprises®, LLC</span>
+              <span class="exp-tab-role">Founder, President | CEO — Global Independent Contractor</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+          <button class="exp-tab " data-target="exp-pall">
+            <div class="exp-tab-date">Jan – Mar 2026</div>
+            <span class="exp-tab-logo pc"><img src="assets/Experience_Logos/pall_corporation_logo.jpg"
+                alt="Pall Corporation" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Pall Corporation</span>
+              <span class="exp-tab-role">Aerospace – Staff Development Quality Engineer</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+          <button class="exp-tab " data-target="exp-kp">
+            <div class="exp-tab-date">Jan – Aug 2017</div>
+            <span class="exp-tab-logo kp"><img src="assets/Experience_Logos/klockner_pentaplast_logo.jpg"
+                alt="Klöckner Pentaplast" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Klöckner Pentaplast of America®, Inc.</span>
+              <span class="exp-tab-role">Sr. Global Lean, Quality, Safety, Health, Environmental (QSHE) Mgr –
+                Operational Excellence (OpEx)</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+          <button class="exp-tab " data-target="exp-dynacraft">
+            <div class="exp-tab-date">Jun 2015 – Dec 2016</div>
+            <span class="exp-tab-logo dc"><img src="assets/Experience_Logos/dynacraft_logo.jpg"
+                alt="Dynacraft" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Dynacraft®, A PACCAR® Company</span>
+              <span class="exp-tab-role">Production Quality Engineer</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+          <button class="exp-tab " data-target="exp-rr">
+            <div class="exp-tab-date">Jul 2010 – Oct 2013</div>
+            <span class="exp-tab-logo rr"><img src="assets/Experience_Logos/rolls_royce_logo.jpg"
+                alt="Rolls-Royce" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Rolls-Royce® North America</span>
+              <span class="exp-tab-role">Sr. Quality / HSE / Business Improvement &amp; Customer Service Manager</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+          <button class="exp-tab " data-target="exp-lmit">
+            <div class="exp-tab-date">Oct 2005 – Feb 2010</div>
+            <span class="exp-tab-logo lm"><img src="assets/Experience_Logos/lockheed_martin_logo.jpg"
+                alt="Lockheed Martin" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Lockheed Martin® Information Technology (LMIT)</span>
+              <span class="exp-tab-role">Quality Management Representative / Assurance Analyst – Staff</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+          <button class="exp-tab " data-target="exp-siemens">
+            <div class="exp-tab-date">Aug 1988 – Sep 2005</div>
+            <span class="exp-tab-logo sm"><img src="assets/Experience_Logos/siemens_logistics_logo.jpg"
+                alt="Siemens Logistics" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Siemens Logistics / Mobility</span>
+              <span class="exp-tab-role">Mass Transit Testing Leader / Project Administrator / Highway Crossing
+                Designer</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+        </div>
+
+        <!-- Right: Detail View Panels -->
+        <div class="exp-detail su-reveal" data-delay="100">
+          <div class="exp-panel active" id="exp-glg">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Expert Witness Services (OpEx) OSHA® | EPA® | QA &amp; Control</h3>
+              <h4>GLG® (Gerson Lehrman Group)</h4>
+              <span class="exp-period">April 2022 – Present · New York, NY</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li>Expert Witness Services Operational Excellence (OpEx) — Expert Witnessing involves the business
+                  philosophy focused on the continual improvement (CI) for the optimization of processes and systems to
+                  achieve a superior performance.</li>
+                <li>Minimizing waste, improving quality, increasing efficiency, and fostering a culture of continuous
+                  improvement (CI) throughout the organization.</li>
+                <li>Independent Verification &amp; Validation (IV&amp;V) — the systematic process of evaluating a
+                  project, system, or product by a team or individuals who are independent of the development or
+                  implementation team.</li>
+                <li>[Occupational Safety and Health Administration® (OSHA) - Expert Witness] Analyzing work-place
+                  conditions for safety violations, investigating accidents to determine root causes, interpreting
+                  complex OSHA regulations for legal clarity, and providing credible, objective testimony to support
+                  legal arguments or dispute resolutions.</li>
+                <li>[Environmental Protection Agency® (EPA) - Witness Expert] Investigates environmental crimes,
+                  assesses compliance with regulations, provides expert testimony in court, and delivers evidence-based
+                  reports to inform legal proceedings and environmental enforcement actions.</li>
+                <li>[Quality Assurance &amp; Control - Witness Expert] Provides the court with specialized knowledge to
+                  interpret technical information, assess adherence to quality standards, and offer opinions on products
+                  or process defects to assist judge/jury understand complex issues in cases of product liability or
+                  regulatory non-compliance.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-panel " id="exp-mdm">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Founder, President | CEO — Global Independent Contractor</h3>
+              <h4>MDM Enterprises®, LLC</h4>
+              <span class="exp-period">December 2017 – Present · Tampa, FL</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li>Benchmark/leverage from 26+ years of Engineering Procurement Construction (EPC) senior management
+                  experiences across Military (DoD) / Aviation-Aerospace (FAA) / Mass-Transit &amp; Automotive (DoT),
+                  USDA, USDE, &amp; FDA.</li>
+                <li>Global Six-Sigma Lean Enterprise — Operational Excellence (OpEx) of Day-to-Day IT Configuration,
+                  Quality Management System (QMS), Environmental Management System (EMS) w/ Health &amp; Safety, and
+                  Business Optimization initiatives for execution of tactical performance.</li>
+                <li>PMP/ME principles applied to CAPEX-P&amp;L-EBITDA-Sales-ROI, Budget-Cost-Analysis, enterprise
+                  application developments, systems integration, cloud-based solutions, efficiency improvements, process
+                  re-engineering testing initiatives w/ SDLC, infrastructure upgrades, and deployments.</li>
+                <li>Delivery of performance coinciding w/ Lean Six-Sigma 'Cost-Savings' principles to sustain multi-site
+                  innovations.</li>
+                <li>Assurance of business objectives realization via key value stream planning, scheduling &amp;
+                  performance, updating/reporting communication w/ system monitoring to embody a 'Built-In-Quality' for
+                  a Zero-Defect culture.</li>
+                <li>Focal point to the client's strategic 'World-Class' KPI goals e.g. PPM, Safety (PPE), BBD, Quality,
+                  Cost, Delivery (OTD), &amp; Waste (Muda) to processes/procedures i.e. Directives, Deviations,
+                  RACI-Matrix, Regulatory Process-Mapping/Submissions, and RCCA/CAPA.</li>
+                <li>Federal regulatory accordance w/ ITAR (22 CFR 120.15) for guidelines with agencies of global
+                  Notified Bodies.</li>
+                <li>SME to eliminate 'Cost of Non-Quality'; advocate 'Process Excellence' (ISO9001 / AS9100D / AS9102
+                  FAIs / AS9120B / AS9145 / IATF-TS16949 / ISO13485 / FSSC22000 / CMMI-DEV / ISO20000 / ITIL-SMv3 /
+                  CoBIT / Mil Stds) to sustain a culture built on safety (ISO14001) / risk mitigation (OHSAS18001 /
+                  ISO45001).</li>
+                <li><strong>Innovation | Technology BxPs</strong> — 2x 'Back-2-Back' Global Award Winner.</li>
+                <li>DoD-DoT-FAA-FDA Data Science PhD, PMP/ME®, SAFe®, PRINCE2® — Quantitative Executive Leader / SME in
+                  enterprise AI applications (DataRobot, Azure AI, Salesforce, SAP-ERP), ISO27001/2® Cybersecurity,
+                  Generative AI/ML VRML, and End-to-End Ethical AI Governance.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-panel " id="exp-pall">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Aerospace – Staff Development Quality Engineer</h3>
+              <h4>Pall Corporation</h4>
+              <span class="exp-period">January 2026 – March 2026 · Newport Richey, FL</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li>Created the Global - Continual Improvement in Information and Technology of Aerospace-Defense
+                  Filtration Units Components with Artificial Intelligence &amp; Data Science [Concept] for
+                  organizational-wide integration.</li>
+                <li>Led the Filtration - Elements Components Value Stream area for streamlining Red Tags and
+                  Non-Conformances escapes of 'controlled' engineering specifications via Design Drawings and Regulatory
+                  standards of the Quality Management System (QMS) to design alignment.</li>
+                <li>Reassessed the Filtration - Elements components 5S/Lean Manufacturing Red Tag Process (Production)
+                  sorting to declutter workspace for better efficiency and safety for the management of inventory.</li>
+                <li>Ensured concise governance to First Article Inspection Reports (FAIRs) via structured quality
+                  assurance methodologies; verified the first production unit of a part were in compliance with the
+                  AS9102® standard — meeting all design, engineering, and manufacturing specifications before full-scale
+                  production.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-panel " id="exp-kp">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Sr. Global Lean, Quality, Safety, Health, Environmental (QSHE) Mgr – Operational Excellence (OpEx)
+              </h3>
+              <h4>Klöckner Pentaplast of America®, Inc.</h4>
+              <span class="exp-period">January 2017 – August 2017 · Gordonsville, VA</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li>Designed, developed and delivered KP QSHE competency to enable the organization to deal effectively
+                  with all QSHE requirements and to facilitate continuous improvement.</li>
+                <li>Provided guidance and coaching for all functions on QSHE processes, from the voice of the customer
+                  (VOC) and product design up to product delivery — ensuring customer satisfaction.</li>
+                <li>Ensured global legal compliance with all QSHE legal standards and management systems for quality,
+                  environment, hygiene and operational safety.</li>
+                <li>Led and supported cross-functional teams (Communications, Finance, Marketing, Operations) to resolve
+                  customer complaints through a Customer Issue Resolution process utilizing the Quality Improvement
+                  Process (QIP) and an effective corrective action system.</li>
+                <li>Horizontally deployed information within the global QSHE team recommending change and KP
+                  Representative for environmental management based on DIN EN ISO 14.001.</li>
+                <li>Coordinated internal Environmental Management System (EMS) in cooperation with site responsible
+                  leaders.</li>
+                <li>Monitored with regional teams the realization of all legal health &amp; safety requirements by law
+                  or Employers Liability Insurance Association.</li>
+                <li>Supported KP Management in all QSHE related issues — root cause analysis for accidents and/or
+                  complaints with a suitable definition of elimination actions.</li>
+                <li>Designed and delivered FM-Global-Audits for continuous decrease of all QSHE risks.</li>
+                <li>QSHE Champion – SME to FDA/USDA manufacturing w/ industrial enhancements; regulated governance to
+                  Resins (Plastics), GFSI-HACCPs initiatives, CDMO-CMO w/ CRO to sterile-aseptic Pharma/Biologic
+                  (Pfizer/Moderna/J&amp;J) and medical devices (Stryker/Smith &amp; Nephew/Biomet) approvals.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-panel " id="exp-dynacraft">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Production Quality Engineer</h3>
+              <h4>Dynacraft®, A PACCAR® Company</h4>
+              <span class="exp-period">June 2015 – December 2016 · Louisville Metropolitan Area</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li>Led Engineering Procurement Construction (EPC) efforts to shop production value stream area layouts
+                  via corporate Approval submittals, for expansion integration.</li>
+                <li>Product and/or process auditing to Quality Standards i.e. ISO9001:2008/2015 QMS, IATF-TS16949, and
+                  ISO1705:2005 cGLP.</li>
+                <li>Governed Lithium Battery Production Efforts for Production and Electric Vehicles (PV/EV) w/ Shipment
+                  Alignment via Quality Standards (IATF-TS16949, ISO9001, AIAG BxPs).</li>
+                <li>Provided analytical support to Dynacraft process owners regarding product/process quality issues.
+                </li>
+                <li>ISO 140001, IATF-TS16949, and ISO9001 Internal Quality Auditor.</li>
+                <li>Identified and facilitated improvement initiatives utilizing customer feedback to help identify
+                  opportunities to resolve quality issues.</li>
+                <li>Performed on-going customer material and warranty inspections, including on-site visits.</li>
+                <li>Ensured all Dynacraft production standards were maintained in accordance with Production Part
+                  Approval Process (PPAP) guidelines in association with Advance Product Quality Planning (APQP).</li>
+                <li>Benchmarked other PACCAR and non-PACCAR locations for best practices (BxP).</li>
+                <li>Reviewed/validated customer warranty claims including inspection of failed parts via SPC Minitab for
+                  systemic root causes and facilitated corrective action to prevent future failures.</li>
+                <li><strong>GEMBA IATF®/AIAG® Walks Lead</strong> — Lithium Ion Battery (eDrive Systems) alignment with
+                  Supply-Chain/3PLs.</li>
+                <li>Frontline Safety/Environmental and Quality Assurance contact for PACCAR OEM's &amp; suppliers.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-panel " id="exp-rr">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Sr. Quality / HSE / Business Improvement &amp; Customer Service Manager</h3>
+              <h4>Rolls-Royce® North America</h4>
+              <span class="exp-period">July 2010 – October 2013 (3 years 4 months)</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li><strong>[Repatriated | Aug–Oct 2013]</strong> Plant 8 Experimental Assembly and Test Risk Champion
+                  for OHSAS 18001:2007 Health and Safety Audits for mitigation of Non-Conformance Reports (NCRs);
+                  Consultant for Integration of the Digital Improvement Journey to Process Excellence (IJtPE) Visual
+                  Management System.</li>
+                <li><strong>[Int'l Secondment | Aug 2012–Aug 2013 — Derby, England]</strong> TXWB Pre-Production
+                  Operations Leadership Team monitoring to minimize and mitigate possible quality escapes via
+                  integration of Disruption Index (DI) integration system during the Pre-Production Life Cycle of
+                  Extra-Wide Body (XWB) Engines with Six-Sigma tools.</li>
+                <li>Coordinated contractual design specifications with on-site audits with Tier 1 &amp; 2 EASA/ISO
+                  9001/Cenelec (EN) European Standards adherence approved suppliers.</li>
+                <li>Champion in leading conceptual design of First Article Inspections (FAI) &amp; Partial FAIs from
+                  receipt of P.O. specification to supplier finished-goods.</li>
+                <li>Civil Large Engines (CLE) — Global Quality Plan conceptual development to full-integration:
+                  Rolls-Royce Dahlewitz (RRD/GER), Rolls-Royce North America Stennis (RRNA/US), and Rolls-Royce, plc
+                  (RR,plc/UK).</li>
+                <li>Champion for escalation of Assembly Control Record (ACR) items via Assembly Built Complaints (ABCs),
+                  Deviations, and Concessions for Executive/Senior Management.</li>
+                <li>Leader for streamlining and integrating RR Dahlewitz (Germany), RR North America–Stennis (Americas),
+                  and RR Derby, plc (Europe) Civil Aerospace Local &amp; Global procedures into a unified repository for
+                  CLE performance testing.</li>
+                <li><strong>[Sr. Quality &amp; HSE Manager | Jul 2010–Aug 2012 — NASA® Stennis Space Center]</strong>
+                  Site and global PoC of EPC activities to Quality and HSE w/ NAVFAC® and corporate stakeholders for
+                  Control Room and Test Bed expansion activities.</li>
+                <li>Champion for sustainment of organizational-wide certifications to ISO 9001:2008 QMS, ISO 14001:2004
+                  EMS, OHSAS 18001:2007, and AS9100:2009 Aerospace Standard within Aviation per FAA guidelines.</li>
+                <li>Site Leader for North America at NASA John C. Stennis Space Center, Fixed-Based Operator (FBO) w/
+                  Stennis International Airport (HSA), and Glacier–Manitoba, Canada locations.</li>
+                <li>🏆 <strong>Global OpEx President's Quality Award — WINNER</strong> (NASA John C. Stennis Space
+                  Center Site Recipient).</li>
+                <li>🏆 <strong>Global OpEx President's Quality Award — Runner-Up WINNER</strong> (MR&amp;O Corporate
+                  Facility in Derby, England Site Recipient).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-panel " id="exp-lmit">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Quality Management Representative / Assurance Analyst – Staff</h3>
+              <h4>Lockheed Martin® Information Technology (LMIT)</h4>
+              <span class="exp-period">October 2005 – February 2010 · U.S. Army / Greater Fort Knox, KY</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li>Implemented and facilitated the ISO 9001:2008 Quality Management System with Design for global IT
+                  initiatives at Ft. Knox, KY within the United States Accessions Command (USAAC), Information Support
+                  Activity (ISA) Communications, Electronics, &amp; Operations Division (CEO&amp;D) and Ft.
+                  Benjamin-Harrison, Indianapolis, IN at DFAS.</li>
+                <li>Lockheed-Martin® Regional Point-of-Contact for Engineering Procurement Construction (EPC) activities
+                  to Quality and EHS with the U.S. Army Corp of Engineers® (USACE) for day-to-day alignment, concerns,
+                  and/or accident reporting.</li>
+                <li>Governed BxPs via Internal Auditing of Value Stream Areas — Global OpEx to Cybersecurity, Quantum
+                  Information Systems, Information Warfare, Transfer of Technology (ToT) Enterprise w/ Financial
+                  Technologies (Fintech): FAR / SAP / EVMS with ICE, UI/UX, Process Mission Assurance Plans (PMAP),
+                  Product Delivery Strategist to Telecom/Mobile Device Hardware, AI/ML &amp; VRML
+                  (Powered–Sustainability) Virtual Training Platforms/Simulations.</li>
+                <li>Program Manager of Internal Quality Auditing at G6 USAAC ISA-CE&amp;O and Information Services
+                  Divisions.</li>
+                <li>ISO / ITIL v3 / COBIT Champion of the Management Steering Committee and Engineering Process Group
+                  (EPG) for USAAC ISA-CE&amp;O Division.</li>
+                <li>Process Improvement / Six-Sigma / Lean Enterprise representative of the Engineering Process Group.
+                </li>
+                <li>Site Manager for the Department of Defense (DoD) Interactive Customer Evaluation (I.C.E.) System.
+                </li>
+                <li>Led GHS-MSDS (Chemical) alignment w/ Mil-Stds® and integrated Cloud with Voice/Data services while
+                  developing and institutionalizing numerous DevOps, ISO, SLAs, OLAs, and SEI compliant organizational
+                  Web-based processes to CMDB integration enterprise processes.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-panel " id="exp-siemens">
+            <button class="exp-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Mass Transit Testing Leader / Project Administrator / Highway Crossing Designer</h3>
+              <h4>Siemens Logistics / Mobility</h4>
+              <span class="exp-period">August 1988 – September 2005 (17 years 2 months) · Louisville, KY</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Highlights</h5>
+              <ul>
+                <li><strong>[2003–2005 — Mass Transit Testing Leader]</strong> Validated EPC to Mass Transit Intelligent
+                  Transportation Systems (ITS) Projects designs e.g. Metropolitan Transit Authority (MTA), for
+                  acceptance.</li>
+                <li>Guided Automated People Mover (APM) Systems and Mass Transit Interlocking Modernization Projects to
+                  coincide integration with existing field forces.</li>
+                <li>Supervised contracted engineering personnel scheduling to ensure workload coverage for validations
+                  of production finished-goods of layouts, hardware &amp; wiring specs, and continuity testing efforts.
+                </li>
+                <li>Directed and planned/implemented several testing and quality initiatives as outlined by EVMS.</li>
+                <li><strong>[2002–2003 — Project Management Administrator]</strong> Effectively supported logistical
+                  operations &amp; support as illustrated in contractual specifications; served as a liaison for
+                  departments (Production, Purchasing, Fabrication, Planning, Quality Assurance, Shipping &amp;
+                  Receiving, Engineering, Finance, Estimating, IT, and Customer Service) to ensure conformity of
+                  contractual obligations.</li>
+                <li>Coordinated contractual design specs via site audits of ISO 9001 approved suppliers; performed
+                  change orders and monthly costs analysis for project expenditures.</li>
+                <li><strong>[1988–2002 — Highway Crossing Designer / Engineering Technician]</strong> Highway Crossing
+                  Designer — Grade Crossing Predictors (GCPs) with Lithium-Ion Battery Fail-Safe Alignment to Signal
+                  Systems.</li>
+                <li>Led testing efforts and validated integration of: Vital and Non-vital Relay Based Logic, Constant
+                  Warning Timing Devices, Photonic Motion (Laser) Sensors &amp; Fiber Optic cabling, RF Systems/HD-Link
+                  Spread Spectrum Radios, Wayside Signaling, and Pole Line Logic Circuitry.</li>
+                <li>Designed Highway Grade Crossing Predictors (GCP) Turnkey Packages; validated Metallurgies (Metals)
+                  i.e. Alloys | Castings | Smelting; ensured ESD efforts — PCB/A, PWB, LED, LCD Alignment with
+                  Transformers, Power Supplies with Lithium-Ion Batteries.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS & TEACHING -->
+  <section id="skills-teaching" class="section skills-teaching-section" aria-labelledby="skills-teaching-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag su-reveal">Expertise</span>
+        <h2 id="skills-teaching-heading" class="section-title su-reveal" data-delay="100">Life Science and <span
+            class="gradient-text">Career Portfolio</span></h2>
+      </div>
+
+      <!-- Skills Grid (Top) -->
+      <div class="skills-grid su-reveal" data-delay="150"
+        style="background: var(--bg-card); padding: 2.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.05); margin-bottom: 3rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: #fff; text-align: center;">Core Competencies &amp;
+          Skills</h3>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          <div>
+            <h4 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem;"><span
+                style="margin-right: 8px;">💻</span> Technical &amp; Data Science</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="ind-tag">Python</span>
+              <span class="ind-tag">SQL</span>
+              <span class="ind-tag mobile-hide">R</span>
+              <span class="ind-tag mobile-hide">AI/ML &amp; VRML</span>
+              <span class="ind-tag mobile-hide">DataRobot</span>
+              <span class="ind-tag mobile-hide">Azure AI</span>
+              <span class="ind-tag mobile-hide">Tableau</span>
+              <span class="ind-tag mobile-hide">Data Science Integration</span>
+              <button class="ind-tag mobile-more-btn"
+                onclick="openSkillsModal('Technical &amp; Data Science', this.parentNode)">+6</button>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem;"><span
+                style="margin-right: 8px;">⚙️</span> Methodologies &amp; Quality</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="ind-tag">Six Sigma Green/Black Belt</span>
+              <span class="ind-tag">Lean Manufacturing</span>
+              <span class="ind-tag mobile-hide">Agile (SAFe) &amp; Scrum</span>
+              <span class="ind-tag mobile-hide">ISO 9001/13485/27001/45001</span>
+              <span class="ind-tag mobile-hide">AS9102 FAIRs</span>
+              <span class="ind-tag mobile-hide">Quality Assurance &amp; Control</span>
+              <span class="ind-tag mobile-hide">Gap Assessments</span>
+              <span class="ind-tag mobile-hide">Risk Mitigation</span>
+              <button class="ind-tag mobile-more-btn"
+                onclick="openSkillsModal('Methodologies &amp; Quality', this.parentNode)">+6</button>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem;"><span
+                style="margin-right: 8px;">📈</span> Leadership &amp; Strategy</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span class="ind-tag">Global OpEx</span>
+              <span class="ind-tag">CRM</span>
+              <span class="ind-tag mobile-hide">SOIP P&amp;Ls</span>
+              <span class="ind-tag mobile-hide">Global Leadership</span>
+              <span class="ind-tag mobile-hide">Lean Cost-Savings</span>
+              <span class="ind-tag mobile-hide">Brown/Greenfield Expansion</span>
+              <span class="ind-tag mobile-hide">Internal/External Auditing</span>
+              <button class="ind-tag mobile-more-btn"
+                onclick="openSkillsModal('Leadership &amp; Strategy', this.parentNode)">+5</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Teaching Master-Detail Layout -->
+      <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: #fff; text-align: center;" class="su-reveal"
+        data-delay="200">Academic Leadership</h3>
+      <div class="teach-layout">
+
+        <!-- Left: Teaching Master List -->
+        <div class="teach-master su-reveal" data-delay="0">
+          <button class="teach-tab active" data-target="teach-wgu">
+            <div class="exp-tab-date">2025</div>
+            <span class="exp-tab-logo glg"><img src="assets/Experience_Logos/western_governors_university_logo.jpg"
+                alt="Western Governors University" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Western Governors University</span>
+              <span class="exp-tab-role">SME - MHA Degree Program</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+
+          <button class="teach-tab" data-target="teach-uoc">
+            <div class="exp-tab-date">2017 &ndash; Present</div>
+            <span class="exp-tab-logo mdm"><img src="assets/Education_Logos/university_of_the_cumberlands_logo.jpg"
+                alt="University of the Cumberlands" /></span>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">University of the Cumberlands</span>
+              <span class="exp-tab-role">Adjunct STEM Professor</span>
+            </div>
+            <span class="exp-tab-arrow">&#8594;</span>
+          </button>
+        </div>
+
+        <!-- Right: Teaching Detail View Panels -->
+        <div class="teach-detail su-reveal" data-delay="100">
+
+          <!-- WGU Panel -->
+          <div class="teach-panel active" id="teach-wgu">
+            <button class="teach-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Subject Matter Expert - Master of Healthcare Administration (MHA) Degree Program</h3>
+              <h4>Western Governors University</h4>
+              <span class="exp-period">April 2025 &ndash; September 2025</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Responsibilities</h5>
+              <ul>
+                <li><strong>Course Development:</strong> Assigned projects for the Master of Healthcare Administration
+                  (MHA) degree program to ensure alignment with industry standards.</li>
+                <li><strong>Assessment Development:</strong> Reviewed and provided feedback on the learning objectives
+                  necessary to meet course competencies.</li>
+                <li><strong>Competency Alignment:</strong> Reviewed and provided feedback on learning objectives to meet
+                  course competencies, alignment, associated skills, and measurable for assessments.</li>
+                <li><strong>Performance Tasks:</strong> Created performance assessment tasks, rubrics, section tests,
+                  and course planning tools with peer SMEs and the program development team.</li>
+                <li><strong>Formative Assessments:</strong> Established distributive formative assessments for course
+                  sections in courses with performance assessments.</li>
+                <li><strong>Learning Checks:</strong> Supported and reviewed learning checks to ensure alignment with
+                  the objectives and required competencies.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UOC Panel -->
+          <div class="teach-panel" id="teach-uoc">
+            <button class="teach-close-btn" aria-label="Close details">&times;</button>
+            <div class="exp-panel-header">
+              <h3>Adjunct Professor - Data Management &amp; Data Science</h3>
+              <h4>University of the Cumberlands</h4>
+              <span class="exp-period">2017 &ndash; Present</span>
+            </div>
+            <div class="exp-panel-content">
+              <h5 class="exp-highlights-title">Key Responsibilities</h5>
+              <ul>
+                <li><strong>Academic Leadership:</strong> Served as STEM Professor for Data Management, Data Science,
+                  Ethics in AI/ML VR, Quantum Control, and Statistics.</li>
+                <li><strong>Student Mentorship:</strong> Mentored diverse cohorts in advanced technological frameworks,
+                  ensuring alignment with modern industry standards and compliance protocols.</li>
+                <li><strong>Curriculum Development:</strong> Designed and facilitated curricula addressing complex
+                  topics in Artificial Intelligence, Machine Learning, and Data Analytics.</li>
+                <li><strong>Research &amp; Analytics:</strong> Guided students in research and analytics for the ethical
+                  governance of strategic AI.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education-section" aria-labelledby="education-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag su-reveal">Academic</span>
+        <h2 id="education-heading" class="section-title su-reveal" data-delay="100">Education &amp;<br /><span
+            class="gradient-text">Research</span></h2>
+      </div>
+      <div class="education-grid">
+
+        <div class="edu-card featured su-reveal" data-delay="0">
+          <div class="edu-card-accent"></div>
+          <div class="edu-degree-badge"><img src="assets/Education_Logos/university_of_phoenix_logo.jpg"
+              alt="University of Phoenix" /></div>
+          <div class="edu-content">
+            <div class="edu-main-info">
+              <h3 class="edu-degree">Doctorate of Management in Organizational Leadership</h3>
+              <p class="edu-field">Information Systems & Technology (DM/IST)</p>
+              <p class="edu-school">University of Phoenix — School of Advanced Studies (SAS) | College of Doctoral
+                Studies (CDS)</p>
+              <p class="edu-period">2012 – 2022</p>
+            </div>
+
+            <div class="edu-dissertation">
+              <span class="diss-label">Dissertation</span>
+              <p class="diss-title">"Continual Improvements in Information and Technology: A Quantitative Ex Post Facto
+                (Causal Comparative) Study Design"</p>
+              <p class="diss-ref">Mosley, M. D. (2022). (Order No. 30245738). Available from ProQuest Dissertations &
+                Theses Global. (2770014136).</p>
+              <a href="https://www.proquest.com/dissertations-theses/continual-improvements-information-technology/docview/2770014136/"
+                target="_blank" rel="noopener noreferrer" class="diss-link">View on ProQuest &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card edu-mobile-hide su-reveal" data-delay="50">
+          <div class="edu-card-accent"></div>
+          <div class="edu-degree-badge mba"><img src="assets/Education_Logos/university_of_phoenix_logo.jpg"
+              alt="University of Phoenix" /></div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Master of Business Administration (MBA)</h3>
+            <p class="edu-field">Specialized Master of Business Administration - Technology Management (MBA/TM)</p>
+            <p class="edu-school">University of Phoenix — School of Graduate Studies</p>
+            <p class="edu-period">2005 – 2007</p>
+
+          </div>
+        </div>
+
+        <div class="edu-card edu-mobile-hide su-reveal" data-delay="100">
+          <div class="edu-card-accent"></div>
+          <div class="edu-degree-badge bs"><img src="assets/Education_Logos/kelley_school_of_business_logo.jpg"
+              alt="Kelley School of Business" /></div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Bachelor of Science</h3>
+            <p class="edu-field">Business (BS/BUS)</p>
+            <p class="edu-school">Indiana University - Kelley School of Business</p>
+            <p class="edu-period">2002 – 2004</p>
+
+          </div>
+        </div>
+
+        <div class="edu-card edu-mobile-hide su-reveal" data-delay="150">
+          <div class="edu-card-accent"></div>
+          <div class="edu-degree-badge aa"><img src="assets/Education_Logos/universityofkentucky_logo.jpg"
+              alt="University of Kentucky" /></div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Associate of Arts</h3>
+            <p class="edu-field">General Studies (AA/GS)</p>
+            <p class="edu-school">University of Kentucky</p>
+            <p class="edu-period">1998 – 2000</p>
+
+          </div>
+        </div>
+
+        <!-- Removed University of Louisville entry as it was not in the LinkedIn PDF -->
+
+        <div class="edu-more-btn-container">
+          <button class="btn btn-primary" onclick="openEduModal()">+3 More Degrees</button>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section certifications-section" aria-labelledby="certs-heading">
+    <div class="container">
+      <div class="section-header" style="position: relative;">
+        <div>
+          <span class="section-tag su-reveal">Credentials</span>
+          <h2 id="certs-heading" class="section-title su-reveal" data-delay="100">Professional<br /><span
+              class="gradient-text">Certifications</span></h2>
+        </div>
+        <div class="certs-slider-controls su-reveal" data-delay="150">
+          <span class="certs-counter" id="certs-counter">SLIDE 1 OF 5<br>15 CERTIFICATIONS</span>
+        </div>
+      </div>
+      <div class="certs-carousel-container su-reveal" data-delay="200">
+        <button class="carousel-btn prev" id="certs-prev" aria-label="Previous slide" disabled>&lt;</button>
+        <div class="certs-track-wrapper">
+          <div class="certs-track" id="certs-track">
+            <div class="cert-card-sleek su-reveal" data-delay="0">
+              <div class="cert-icon-wrapper">
+                <div class="cert-logo-multi"><img src="assets/cert_logos/rolls_royce_logo.jpg" alt="Logo"
+                    class="active"><img src="assets/cert_logos/siemens_logo.jpg" alt="Logo"></div>
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">CIA®</h3>
+                <p class="cert-full-name">Certified Internal Auditor (Lead)</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Rolls-Royce (Sep 2010) • Siemens (Feb 1998)</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek su-reveal" data-delay="50">
+              <div class="cert-icon-wrapper">
+                <div class="cert-logo-multi"><img src="assets/cert_logos/dynacraft_logo.jpg" alt="Logo"
+                    class="active"><img src="assets/cert_logos/rolls_royce_logo.jpg" alt="Logo"><img
+                    src="assets/cert_logos/siemens_logo.jpg" alt="Logo"></div>
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">SSGB®</h3>
+                <p class="cert-full-name">Six Sigma Green Belt (LSSGB/CSSGB)</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Dynacraft (Dec 2016) • Rolls-Royce (May 2013) • Siemens (May 2001)</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek su-reveal" data-delay="100">
+              <div class="cert-icon-wrapper">
+                <div class="cert-logo-multi"><img src="assets/cert_logos/lockheed_martin_logo.jpg" alt="Logo"
+                    class="active"><img src="assets/cert_logos/siemens_logo.jpg" alt="Logo"></div>
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">SSLB®</h3>
+                <p class="cert-full-name">Six Sigma Lean Belt / Professional</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Lockheed Martin (Nov 2007) • Siemens (Apr 2001)</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="150">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/rolls_royce_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">SSYB®</h3>
+                <p class="cert-full-name">Six Sigma Yellow Belt</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Rolls-Royce</span>
+                  <span class="cert-year">Dec 2011</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="0">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/exin_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">ITIL® v3 Foundation</h3>
+                <p class="cert-full-name">Information Technology Infrastructure Library</p>
+                <div class="cert-meta">
+                  <span class="cert-org">EXIN</span>
+                  <span class="cert-year">Mar 2007</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="50">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/university_of_phoenix_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">IRB Approval®</h3>
+                <p class="cert-full-name">Institutional Review Board [Exempt]</p>
+                <div class="cert-meta">
+                  <span class="cert-org">University of Phoenix</span>
+                  <span class="cert-year">Aug 2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="100">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/dynacraft_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">TL / GL®</h3>
+                <p class="cert-full-name">Team Leader / Group Leader</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Dynacraft, A PACCAR Company</span>
+                  <span class="cert-year">Jul 2016</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="150">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/citi_program_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">CITI Program®</h3>
+                <p class="cert-full-name">Group 1.Social / Behavioral Research Investigator</p>
+                <div class="cert-meta">
+                  <span class="cert-org">CITI Program</span>
+                  <span class="cert-year">Jan 2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="0">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/siemens_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">Senior Auditor®</h3>
+                <p class="cert-full-name">Senior Internal Auditor</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Siemens</span>
+                  <span class="cert-year">Feb 1998</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="50">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/bureau_veritas_group_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">OHSAS 18001:2007®</h3>
+                <p class="cert-full-name">Occupational Health Safety Assessment Series</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Bureau Veritas</span>
+                  <span class="cert-year">Nov 2010</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="100">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/bureau_veritas_group_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">AS9100 / ISO9001®</h3>
+                <p class="cert-full-name">Quality Management System (QMS)</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Bureau Veritas</span>
+                  <span class="cert-year">Nov 2010</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="150">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/duke_corporate_education_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">ME® / PMP®</h3>
+                <p class="cert-full-name">Manager Essentials / Project Management Professional</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Duke Corporate Education</span>
+                  <span class="cert-year">Dec 2011</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="0">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/apics_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">Purchasing Manager®</h3>
+                <p class="cert-full-name">Purchasing Management</p>
+                <div class="cert-meta">
+                  <span class="cert-org">APICS (University of Louisville)</span>
+                  <span class="cert-year">Oct 2000</span>
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="50">
+              <div class="cert-icon-wrapper">
+                <img src="assets/cert_logos/bureau_veritas_group_logo.jpg" alt="Logo" class="cert-logo-single">
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">CSP®</h3>
+                <p class="cert-full-name">Certified Safety Professional</p>
+                <div class="cert-meta">
+                  <span class="cert-org">Board of Certified Safety Professionals</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="cert-card-sleek cert-mobile-hide su-reveal" data-delay="100">
+              <div class="cert-icon-wrapper">
+                <span class="cert-avatar">✓</span>
+              </div>
+              <div class="cert-details">
+                <h3 class="cert-title">ASQ®</h3>
+                <p class="cert-full-name">American Society for Quality</p>
+                <div class="cert-meta">
+                  <span class="cert-org">ASQ</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next" id="certs-next" aria-label="Next slide">&gt;</button>
+        </div>
+
+        <div class="cert-more-btn-container">
+          <button class="btn btn-primary" onclick="openCertsModal()">+12 More Certifications</button>
+        </div>
+
+
+      </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services-section" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag su-reveal">Consulting</span>
+        <h2 id="services-heading" class="section-title su-reveal" data-delay="100">Professional<br /><span
+            class="gradient-text">Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card starter su-reveal" data-delay="0" style="padding-top: 0; overflow: hidden;">
+          <div style="padding: 25px;">
+            <img src="assets/service-3.jpg" alt="Introductory Consult"
+              style="width: 100%; height: auto; border-radius: 16px; display: block;" />
+          </div>
+          <div style="padding: 0 2rem 2rem;">
+            <h3 class="service-name">Introductory Consult</h3>
+            <p class="service-desc">Strategic consultation for C-Suite executives on Global Operational Excellence.
+              ($125)</p>
+            <a href="https://www.humiint.com/l/introductory-offer-global-opex-c-suite-executive-consult/692622cb-d47d-4619-8f70-b1dbbf560c42"
+              target="_blank" rel="noopener noreferrer" class="btn btn-service">Book Intro Session</a>
+          </div>
+        </div>
+        <div class="service-card pro su-reveal" data-delay="100" style="padding-top: 0; overflow: hidden;">
+          <div style="padding: 25px;">
+            <img src="assets/service-2.jpg" alt="Standard Consult"
+              style="width: 100%; height: auto; border-radius: 16px; display: block;" />
+          </div>
+          <div style="padding: 0 2rem 2rem;">
+            <h3 class="service-name">Standard Consult</h3>
+            <p class="service-desc">Deep-dive session tailored for enterprise-level process optimization and AI
+              integration. ($525)</p>
+            <a href="https://www.humiint.com/l/global-operational-excellence-opex-standard-consultations/6922990f-6a64-43b0-bb72-d72cfbdd0b78"
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book Standard Session</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag su-reveal">Connect</span>
+        <h2 id="contact-heading" class="section-title su-reveal" data-delay="100">Let's Work<br /><span
+            class="gradient-text">Together</span></h2>
+      </div>
+      <form class="contact-form su-reveal" data-delay="120" id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Full Name *</label>
+          <input type="text" id="contactName" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contactSubject">Subject *</label>
+          <input type="text" id="contactSubject" name="subject" required />
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message *</label>
+          <textarea id="contactMessage" name="message" rows="4" required></textarea>
+        </div>
+        <p class="form-note">* indicates a required field</p>
+        <button type="submit" class="btn btn-primary btn-full" id="contactSubmit">Send Message</button>
+        <div id="formSuccess" class="form-success"
+          style="display: none; margin-top: 1rem; color: #4ade80; text-align: center; font-weight: 500;">Your message
+          has been sent successfully!</div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- GLOBAL MODALS -->
+  <!-- Mobile Skills Modal -->
+  <div id="skillsMobileModal" class="skills-modal-overlay">
+    <div class="skills-modal-content">
+      <button class="skills-modal-close" onclick="closeSkillsModal()">&times;</button>
+      <h3 id="skillsModalTitle" class="skills-modal-title">Category</h3>
+      <div id="skillsModalTags" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+    </div>
+  </div>
+
+  <!-- Mobile Education Modal -->
+  <div id="eduMobileModal" class="skills-modal-overlay">
+    <div class="skills-modal-content">
+      <button class="skills-modal-close" onclick="closeEduModal()">&times;</button>
+      <h3 class="skills-modal-title">All Education &amp; Research</h3>
+      <div id="eduModalContent" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+    </div>
+  </div>
+
+  <!-- Mobile Certifications Modal -->
+  <div id="certsMobileModal" class="skills-modal-overlay">
+    <div class="skills-modal-content">
+      <button class="skills-modal-close" onclick="closeCertsModal()">&times;</button>
+      <h3 class="skills-modal-title">All Professional Certifications</h3>
+      <div id="certsModalContent" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+    </div>
+  </div>
+
+  <script src="script.js?v=7"></script>
+</body>
+
+</html>
