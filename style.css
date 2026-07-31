@@ -162,7 +162,7 @@ input, textarea, select, button { font-family: inherit; }
 /* ---- Shared Section Styles ---- */
 .section { padding: 100px 0; position: relative; }
 .section:nth-child(even) { background: var(--bg-section-alt); }
-.container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 1rem; }
 .section-header { text-align: center; margin-bottom: 60px; }
 .section-tag {
   display: inline-block; padding: 0.35rem 1rem;
