@@ -28,9 +28,17 @@ navToggle.addEventListener('click', () => {
   const open = navToggle.getAttribute('aria-expanded') === 'true';
   navToggle.setAttribute('aria-expanded', !open);
   navMenu.classList.toggle('open');
+  // Lock / unlock background page scroll
+  document.documentElement.classList.toggle('menu-open', !open);
+  document.body.classList.toggle('menu-open', !open);
 });
 navMenu.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => { navMenu.classList.remove('open'); navToggle.setAttribute('aria-expanded', 'false'); });
+  a.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.documentElement.classList.remove('menu-open');
+    document.body.classList.remove('menu-open');
+  });
 });
 
 // ============================================================
