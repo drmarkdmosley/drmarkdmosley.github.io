@@ -241,9 +241,9 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    right: auto;
-    bottom: auto;
-    width: 100vw;
+    right: 0;
+    bottom: 0;
+    width: 100%;
     height: 100vh;
     height: 100dvh;
     /* Use 100dvh for proper mobile browser height, fallback to vh */
@@ -252,12 +252,15 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 100px;
+    padding-bottom: 50px;
     /* Push links below navbar */
     gap: 1.5rem;
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-links.open {
@@ -268,6 +271,7 @@ button {
   .nav-links li {
     width: 100%;
     text-align: center;
+    flex-shrink: 0;
   }
 
   .nav-link {
@@ -282,6 +286,12 @@ button {
     margin-left: 0;
     /* Remove desktop margin */
   }
+}
+
+/* ---- Lock background scroll when mobile menu is open ---- */
+html.menu-open,
+body.menu-open {
+  overflow: hidden !important;
 }
 
 /* ---- Shared Section Styles ---- */
@@ -348,7 +358,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.875rem 2rem;
+  padding: 0.875rem 1rem;
   border-radius: var(--radius-sm);
   font-size: 0.95rem;
   font-weight: 600;
