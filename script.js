@@ -36,6 +36,10 @@ navMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     navMenu.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
+    // Close any underlying modals
+    if (typeof closeSkillsModal === 'function') closeSkillsModal();
+    if (typeof closeEduModal === 'function') closeEduModal();
+    if (typeof closeCertsModal === 'function') closeCertsModal();
     document.documentElement.classList.remove('menu-open');
     document.body.classList.remove('menu-open');
   });
@@ -533,7 +537,7 @@ function openCertsModal() {
   if (!modal || !modalContent || !track) return;
 
   modalContent.innerHTML = '';
-  const cards = track.querySelectorAll('.cert-card-sleek');
+  const cards = track.querySelectorAll('.cert-card-sleek:not(.cert-card-placeholder)');
   cards.forEach(card => {
     const clone = card.cloneNode(true);
     clone.classList.remove('cert-mobile-hide');
