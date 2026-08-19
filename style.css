@@ -104,7 +104,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2000;
   background: rgba(10, 15, 30, 0.85);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -2171,7 +2171,7 @@ body.menu-open {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
   margin-top: auto;
   padding-top: 0.5rem;
@@ -2183,6 +2183,10 @@ body.menu-open {
   color: var(--text-muted);
   font-weight: 500;
   line-height: 1.4;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cert-year {
@@ -2191,6 +2195,8 @@ body.menu-open {
   background: rgba(201, 168, 76, 0.08);
   border: 1px solid var(--border);
   border-radius: 4px;
+  flex-shrink: 0;
+  white-space: nowrap;
   font-size: 0.75rem;
   color: var(--accent);
   font-weight: 700;
