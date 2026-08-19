@@ -353,6 +353,21 @@ function initCertsCarousel() {
   function updateLayout() {
     if (window.innerWidth <= 768) return;
     cardsPerView = window.innerWidth <= 1200 ? 2 : 3;
+    
+    // Add placeholders so the last slide aligns correctly
+    track.querySelectorAll('.cert-card-placeholder').forEach(el => el.remove());
+    const remainder = cards.length % cardsPerView;
+    if (remainder !== 0) {
+      const placeholdersNeeded = cardsPerView - remainder;
+      for (let i = 0; i < placeholdersNeeded; i++) {
+        const placeholder = document.createElement('div');
+        placeholder.className = 'cert-card-sleek cert-card-placeholder';
+        placeholder.style.visibility = 'hidden';
+        placeholder.style.pointerEvents = 'none';
+        track.appendChild(placeholder);
+      }
+    }
+
     totalSlides = Math.ceil(cards.length / cardsPerView);
     updateCounter();
   }
@@ -368,7 +383,7 @@ function initCertsCarousel() {
     // Safety clamp
     if (currentSlide >= totalSlides) currentSlide = Math.max(0, totalSlides - 1);
 
-    counter.innerHTML = 'SLIDE ' + (currentSlide + 1) + ' OF ' + totalSlides + '<br>15 CERTIFICATIONS';
+    counter.innerHTML = 'SLIDE ' + (currentSlide + 1) + ' OF ' + totalSlides + '<br>' + cards.length + ' CERTIFICATIONS';
     prevBtn.disabled = wrapper.scrollLeft <= 10; // disable if near start
     // disable if near end
     nextBtn.disabled = (wrapper.scrollLeft + wrapper.offsetWidth >= track.scrollWidth - 10);
