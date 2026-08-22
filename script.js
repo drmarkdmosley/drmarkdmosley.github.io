@@ -36,10 +36,10 @@ navMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     navMenu.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
-    // Close any underlying modals
     if (typeof closeSkillsModal === 'function') closeSkillsModal();
     if (typeof closeEduModal === 'function') closeEduModal();
     if (typeof closeCertsModal === 'function') closeCertsModal();
+    if (typeof closeOrgModal === 'function') closeOrgModal();
     document.documentElement.classList.remove('menu-open');
     document.body.classList.remove('menu-open');
   });
@@ -551,6 +551,39 @@ function openCertsModal() {
 
 function closeCertsModal() {
   const modal = document.getElementById('certsMobileModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+// ============================================================
+//  MOBILE ORGANIZATIONS MODAL LOGIC
+// ============================================================
+function openOrgModal() {
+  const modal = document.getElementById('orgMobileModal');
+  const modalContent = document.getElementById('orgModalContent');
+  const grid = document.querySelector('.organizations-grid');
+
+  if (!modal || !modalContent || !grid) return;
+
+  // Clone all org-card elements
+  modalContent.innerHTML = '';
+  const cards = grid.querySelectorAll('.org-card');
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    clone.classList.remove('org-mobile-hide');
+    clone.classList.add('visible'); // Force visibility
+    modalContent.appendChild(clone);
+  });
+
+  // Show Modal
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeOrgModal() {
+  const modal = document.getElementById('orgMobileModal');
   if (modal) {
     modal.classList.remove('active');
     document.body.style.overflow = '';
