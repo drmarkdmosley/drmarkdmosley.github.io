@@ -2813,7 +2813,7 @@ body.menu-open {
 /* ==========================================
    FOOTER
    ========================================== */
-.footer {
+/* .footer {
   background: var(--bg-section-alt);
   border-top: 1px solid var(--border-light);
   padding: 60px 0 0;
@@ -2905,7 +2905,7 @@ body.menu-open {
 .footer-clearance {
   color: var(--accent);
   font-weight: 600;
-}
+} */
 
 /* ==========================================
    RESPONSIVE
