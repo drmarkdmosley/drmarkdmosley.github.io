@@ -3821,11 +3821,14 @@ footer {
 /* 2. Mobile and Tablet Responsive Styling */
 @media (max-width: 768px) {
   .hero-bg {
-    /* Adjusts the focus to the top/center of the image on tall phone screens */
+     /* Adjusts the focus to the top/center of the image on tall phone screens */
     background-position: top center !important; 
     
-    /* Change 'cover' to 'contain' if you want 100% of the image visible without cropping */
-    background-size: cover !important; 
-    background-color: #0b1120 !important;
+    /* 'contain' forces the entire uncropped image to be visible */
+    background-size: contain !important; 
+    
+    /* Fills the empty space below the image with a dark color to match the theme */
+    background-color: #0b1120 !important; 
+    background-repeat: no-repeat !important;
   }
 }
