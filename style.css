@@ -3805,3 +3805,27 @@ footer {
   height: 100%;
   object-fit: contain;
 }
+
+/* ========================================= */
+/* HERO BACKGROUND IMAGE AND RESPONSIVENESS  */
+/* ========================================= */
+
+/* 1. Desktop and Laptop Styling */
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('assets/new-wallpaper.PNG') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 2. Mobile and Tablet Responsive Styling */
+@media (max-width: 768px) {
+  .hero-bg {
+    /* Adjusts the focus to the top/center of the image on tall phone screens */
+    background-position: top center !important; 
+    
+    /* Change 'cover' to 'contain' if you want 100% of the image visible without cropping */
+    background-size: cover !important; 
+    background-color: #0b1120 !important;
+  }
+}
